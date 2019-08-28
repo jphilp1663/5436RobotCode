@@ -26,6 +26,7 @@ Thread t = new Thread(() -> {
             CvSink cvSink2 = CameraServer.getInstance().getVideo(camera2);
             CvSource outputStream = CameraServer.getInstance().putVideo("Switcher", 320, 240);
             
+            Mat image = new Mat();
             
             while(!Thread.interrupted()) {
             	
